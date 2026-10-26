@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Rashidello                                 +#+  +:+       +#+        */
+/*   By: rarayano <rarayano@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/06                            #+#    #+#             */
-/*   Updated: 2026/02/06                            ###   ########.fr       */
+/*   Created: 2026/02/08 14:05:38 by rarayano          #+#    #+#             */
+/*   Updated: 2026/02/08 14:09:27 by rarayano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	slen = ft_strlen(s);
-	if (start >= s_len)
+	if (start >= slen)
 		return (ft_strdup(""));
 	if (len > slen - start)
 		len = slen - start;
